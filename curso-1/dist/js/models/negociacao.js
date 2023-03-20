@@ -4,6 +4,7 @@ export class Negociacao {
         this._quantidade = _quantidade;
         this._valor = _valor;
     }
+    // pode setar os atributos como public readonly, sem underscore, e eliminar a necessidade de setters. ex: public readonly data: Date
     get data() {
         return this._data;
     }
