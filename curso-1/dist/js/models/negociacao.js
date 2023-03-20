@@ -6,7 +6,8 @@ export class Negociacao {
     }
     // pode setar os atributos como public readonly, sem underscore, e eliminar a necessidade de setters. ex: public readonly data: Date
     get data() {
-        return this._data;
+        const data = new Date(this._data.getTime());
+        return data;
     }
     get quantidade() {
         return this._quantidade;
