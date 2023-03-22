@@ -1,6 +1,6 @@
 export class View {
     constructor(seletor) {
-        this.elemento = document.querySelector('seletor');
+        this.elemento = document.querySelector(seletor);
     }
     template(model) {
         throw Error('A classe filha deve sobrescrever o método template da classe mãe');
