@@ -29,6 +29,6 @@ export class View {
     }
 }
 __decorate([
-    inspect(),
+    inspect,
     logarTempoDeExecucao()
 ], View.prototype, "update", null);
