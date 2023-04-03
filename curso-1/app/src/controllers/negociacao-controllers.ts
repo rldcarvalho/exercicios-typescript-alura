@@ -38,6 +38,10 @@ export class NegociacaoController {
         this.limparFormulario();
     }
 
+    public importaDados(): void {
+        alert('oi');
+    }
+
     private ehDiaUtil(data: Date) {
         return (data.getDay() > DiaDaSemana.DOMINGO && data.getDay() < DiaDaSemana.SABADO)
     }
