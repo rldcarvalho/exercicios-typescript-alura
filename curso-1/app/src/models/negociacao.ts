@@ -1,10 +1,12 @@
-export class Negociacao {
+import { imprimivel } from "../utils/imprimivel.js";
+
+export class Negociacao extends imprimivel {
 
   constructor(
     private _data: Date, 
     private _quantidade: number, 
     private _valor: number
-  ) {}
+  ) { super(); }
 
   // pode setar os atributos como public readonly, sem underscore, e eliminar a necessidade de setters. ex: public readonly data: Date
 
